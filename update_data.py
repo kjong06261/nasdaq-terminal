@@ -30,7 +30,9 @@ def get_data():
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NASDAQ TECH TERMINAL</title>
+        
         <meta name="google-site-verification" content="38-xbGp8vqze8MfoAinJeJoI-maoeT_-qE9TXa7XekQ" />
+        
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3030006828946894" crossorigin="anonymous"></script>
         <style>
             body {{ background: #000000; color: #00ff95; font-family: 'Courier New', monospace; padding: 20px; }}
@@ -74,6 +76,5 @@ def get_data():
 
 if __name__ == "__main__":
     with open('index.html', 'w', encoding='utf-8') as f: f.write(get_data())
-    # 사이트맵 주소는 3호점용 주소로 나중에 자동 갱신됩니다.
     sitemap = f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://tech.us-dividend-pro.com/</loc><priority>1.0</priority></url></urlset>'
     with open('sitemap.xml', 'w', encoding='utf-8') as f: f.write(sitemap)
