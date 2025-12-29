@@ -3,48 +3,361 @@
     <html lang="ko">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3030006828946894" crossorigin="anonymous"></script>
-        
-        <meta name="google-site-verification" content="38-xbGp8vqze8MfoAinJeJoI-maoeT_-qE9TXa7XekQ" />
-        
-        <title>NASDAQ TECH TERMINAL</title>
+        <title>NASDAQ PREMIUM TERMINAL</title>
         <style>
-            body { background: #000; color: #0f9; font-family: monospace; padding: 20px; }
-            .card { border: 1px solid #0f9; padding: 10px; margin-bottom: 10px; display: inline-block; width: 200px; }
-            .up { color: #f33; } .down { color: #3af; }
+            :root { --bg: #05070a; --card-bg: #11141b; --border: #1e222d; --text: #d1d4dc; --accent: #2962ff; }
+            body { background-color: var(--bg); color: var(--text); font-family: 'Trebuchet MS', sans-serif; margin: 0; padding: 20px; }
+            .container { max-width: 1200px; margin: 0 auto; }
+            header { border-bottom: 2px solid var(--accent); padding-bottom: 20px; margin-bottom: 40px; text-align: left; }
+            h1 { font-size: 38px; color: #ffffff; margin: 0; letter-spacing: -1px; }
+            .update-tag { font-size: 14px; color: #848e9c; margin-top: 5px; }
+            .sector-title { font-size: 18px; color: var(--accent); margin: 40px 0 15px 0; border-left: 4px solid var(--accent); padding-left: 10px; text-transform: uppercase; }
+            .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+            .card { background: var(--card-bg); border: 1px solid var(--border); padding: 15px; border-radius: 6px; transition: all 0.2s ease; }
+            .card:hover { background: #1c212d; border-color: #3b72ff; transform: translateY(-2px); }
+            .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+            .symbol { font-weight: bold; font-size: 16px; color: #fff; }
+            .price { font-size: 24px; font-weight: 700; color: #ffffff; }
+            .pct { font-size: 13px; font-weight: bold; padding: 2px 6px; border-radius: 4px; }
+            .up { color: #00ffaa; background: rgba(0, 255, 170, 0.1); }
+            .down { color: #ff3b3b; background: rgba(255, 59, 59, 0.1); }
+            footer { margin-top: 80px; padding: 40px; text-align: center; font-size: 12px; color: #444; border-top: 1px solid var(--border); }
         </style>
     </head>
     <body>
-        <h1>> NASDAQ_TECH_TERMINAL_V3</h1>
-        <p>LAST_UPDATE: 2025-12-29 13:13</p>
-        <hr>
-    
-        <div class="card">
-            <b>QQQ</b><br>
-            Price: $623.89<br>
-            Change: <span class="down">-0.01%</span>
+        <div class="container">
+            <header>
+                <h1>TECH TERMINAL PRO</h1>
+                <div class="update-tag">LIVE MARKET DATA • 2025-12-29 13:42 KST</div>
+            </header>
+            <h2 class="sector-title">MARKET INDEX</h2><div class="grid">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">QQQ</span>
+                        <span class="pct down">-0.01%</span>
+                    </div>
+                    <div class="price">$623.89</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">TQQQ</span>
+                        <span class="pct down">-0.09%</span>
+                    </div>
+                    <div class="price">$55.31</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">SQQQ</span>
+                        <span class="pct up">+0.17%</span>
+                    </div>
+                    <div class="price">$65.33</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">VOO</span>
+                        <span class="pct up">+0.01%</span>
+                    </div>
+                    <div class="price">$634.84</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">DIA</span>
+                        <span class="pct up">+0.00%</span>
+                    </div>
+                    <div class="price">$487.03</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">IWM</span>
+                        <span class="pct down">-0.51%</span>
+                    </div>
+                    <div class="price">$251.42</div>
+                </div>
+                </div><h2 class="sector-title">MAGNIFICENT 7</h2><div class="grid">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">NVDA</span>
+                        <span class="pct up">+1.02%</span>
+                    </div>
+                    <div class="price">$190.53</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">AAPL</span>
+                        <span class="pct down">-0.15%</span>
+                    </div>
+                    <div class="price">$273.40</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">MSFT</span>
+                        <span class="pct down">-0.06%</span>
+                    </div>
+                    <div class="price">$487.71</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">GOOGL</span>
+                        <span class="pct down">-0.18%</span>
+                    </div>
+                    <div class="price">$313.51</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">AMZN</span>
+                        <span class="pct up">+0.06%</span>
+                    </div>
+                    <div class="price">$232.52</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">META</span>
+                        <span class="pct down">-0.64%</span>
+                    </div>
+                    <div class="price">$663.29</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">TSLA</span>
+                        <span class="pct down">-2.10%</span>
+                    </div>
+                    <div class="price">$475.19</div>
+                </div>
+                </div><h2 class="sector-title">SEMICONDUCTORS</h2><div class="grid">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">SOXL</span>
+                        <span class="pct up">+0.00%</span>
+                    </div>
+                    <div class="price">$44.21</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">SOXX</span>
+                        <span class="pct down">-0.03%</span>
+                    </div>
+                    <div class="price">$306.04</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">AVGO</span>
+                        <span class="pct up">+0.55%</span>
+                    </div>
+                    <div class="price">$352.13</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">AMD</span>
+                        <span class="pct down">-0.02%</span>
+                    </div>
+                    <div class="price">$214.99</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">ARM</span>
+                        <span class="pct down">-1.15%</span>
+                    </div>
+                    <div class="price">$110.27</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">MU</span>
+                        <span class="pct down">-0.66%</span>
+                    </div>
+                    <div class="price">$284.79</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">TSM</span>
+                        <span class="pct up">+1.35%</span>
+                    </div>
+                    <div class="price">$302.84</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">ASML</span>
+                        <span class="pct up">+0.68%</span>
+                    </div>
+                    <div class="price">$1,072.75</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">INTC</span>
+                        <span class="pct up">+0.11%</span>
+                    </div>
+                    <div class="price">$36.20</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">AMAT</span>
+                        <span class="pct up">+0.43%</span>
+                    </div>
+                    <div class="price">$261.90</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">LRCX</span>
+                        <span class="pct up">+0.42%</span>
+                    </div>
+                    <div class="price">$178.07</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">QCOM</span>
+                        <span class="pct up">+0.02%</span>
+                    </div>
+                    <div class="price">$174.81</div>
+                </div>
+                </div><h2 class="sector-title">AI & SOFTWARE</h2><div class="grid">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">PLTR</span>
+                        <span class="pct down">-2.81%</span>
+                    </div>
+                    <div class="price">$188.71</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">ORCL</span>
+                        <span class="pct up">+0.25%</span>
+                    </div>
+                    <div class="price">$197.99</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">ADBE</span>
+                        <span class="pct up">+0.23%</span>
+                    </div>
+                    <div class="price">$353.80</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">CRM</span>
+                        <span class="pct up">+0.31%</span>
+                    </div>
+                    <div class="price">$266.08</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">SNOW</span>
+                        <span class="pct up">+0.88%</span>
+                    </div>
+                    <div class="price">$223.88</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">NOW</span>
+                        <span class="pct up">+0.85%</span>
+                    </div>
+                    <div class="price">$153.89</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">WDAY</span>
+                        <span class="pct up">+1.78%</span>
+                    </div>
+                    <div class="price">$220.70</div>
+                </div>
+                </div><h2 class="sector-title">FINTECH & BEYOND</h2><div class="grid">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">PYPL</span>
+                        <span class="pct down">-0.12%</span>
+                    </div>
+                    <div class="price">$59.97</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">V</span>
+                        <span class="pct down">-0.04%</span>
+                    </div>
+                    <div class="price">$355.00</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">MA</span>
+                        <span class="pct up">+0.03%</span>
+                    </div>
+                    <div class="price">$579.60</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">COIN</span>
+                        <span class="pct down">-1.18%</span>
+                    </div>
+                    <div class="price">$236.90</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">NFLX</span>
+                        <span class="pct up">+0.89%</span>
+                    </div>
+                    <div class="price">$94.47</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">UBER</span>
+                        <span class="pct up">+0.14%</span>
+                    </div>
+                    <div class="price">$81.26</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">SHOP</span>
+                        <span class="pct up">+0.81%</span>
+                    </div>
+                    <div class="price">$170.83</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">COST</span>
+                        <span class="pct up">+0.17%</span>
+                    </div>
+                    <div class="price">$873.35</div>
+                </div>
+                </div>
+            <footer>
+                <p>Designed for professional traders. Data updated every hour.</p>
+                <p>© 2025 US-DIVIDEND-PRO. All rights reserved.</p>
+            </footer>
         </div>
-        
-        <div class="card">
-            <b>TQQQ</b><br>
-            Price: $55.31<br>
-            Change: <span class="down">-0.09%</span>
-        </div>
-        
-        <div class="card">
-            <b>NVDA</b><br>
-            Price: $190.53<br>
-            Change: <span class="up">1.02%</span>
-        </div>
-        
-        <div class="card">
-            <b>SOXL</b><br>
-            Price: $44.21<br>
-            Change: <span class="up">0.00%</span>
-        </div>
-        
-        <hr>
-        <p style="font-size:12px; color:#555;">본 사이트는 실시간 기술주 데이터를 제공합니다.</p>
     </body>
     </html>
     
