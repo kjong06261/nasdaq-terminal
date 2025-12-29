@@ -2,8 +2,8 @@ name: Update Tech Terminal
 
 on:
   schedule:
-    - cron: '0 * * * *'  # 매시간 정각 실행
-  workflow_dispatch:      # 수동 실행 버튼
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # 모든 히스토리를 가져와서 충돌 방지
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -29,4 +31,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Update tech data and sitemap" || exit 0
-          git push
+          # --force(강제) 옵션을 넣어서 사장님이 만든 수동 파일을 무조건 덮어씁니다
+          git push --force origin main
