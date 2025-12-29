@@ -74,5 +74,6 @@ def get_data():
 
 if __name__ == "__main__":
     with open('index.html', 'w', encoding='utf-8') as f: f.write(get_data())
-    sitemap = f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://{datetime.now().strftime("%Y%m%d")}.github.io/nasdaq-terminal/</loc><priority>1.0</priority></url></urlset>'
+    # 사이트맵 주소는 3호점용 주소로 나중에 자동 갱신됩니다.
+    sitemap = f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://tech.us-dividend-pro.com/</loc><priority>1.0</priority></url></urlset>'
     with open('sitemap.xml', 'w', encoding='utf-8') as f: f.write(sitemap)
